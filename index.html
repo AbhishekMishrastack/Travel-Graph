@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;">
+
+        <img src="data:image/png;base64,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" width="154" height="125"
+            class="d-inline-block align-top" alt="">
+        Least time travel path project
+
+    </nav>
+    <div id="container">
+        <div id="mynetwork">
+        </div>
+        <div id="container2">
+            <span id="temptext2" style="width: 100%; text-align: center; font-size: x-large">
+            </span>
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                Red link represents bus travel time : <i class="fa fa-bus" aria-hidden="true" style="color: orange"></i><br>
+                Green link represents flight travel time : <i class="fa fa-plane" aria-hidden="true" style="color: green"></i><br>
+                Click on solve to get Solution !!
+            </span>
+            <div id="mynetwork2" style="display: none"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <button type="button" class="btn btn-danger" id="generate-graph">Get New Problem</button>
+        <br>
+        <button type="button" class="btn btn-success" id="solve">Solve</button>
+    </div>
+</body>
+
+</html>
